@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: #ecf2f8;
+}
+
+.grid-container {
+    box-shadow: 21px 17px 11px -3px rgba(0,0,0,0.1);
+    z-index: 0;
+    max-width: 1440px;
+}
+
+
+.upperLeft-item {
+    background-color: #7541c8;
+    position: relative;
+}
+
+.upperRight-item {
+    background-color: #48556a;
+
+}
+
+.bottomLeft-item {
+    background-color: #ffffff;
+
+}
+
+.bottomRight-item {
+    background-color: #19212e;
+    
+}
+
+.right-item {
+    background-color: #ffffff;
+
+}
+
+#left-items,
+.right-item {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+img {
+    border: 2px solid rgb(114, 40, 156);
+    border-radius: 40px;
+    margin-right: 20px;
+}
+
+.name p {
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+#daniel,
+#jeanette,
+#kira {
+    color: white;
+    
+}
+
+#graduate {
+    color: white;
+    opacity: 50%;
+}
+
+h3 {
+    color: #ffffff;
+    font-weight: 600;
+    position: relative;
+    z-index: 3;
+}
+
+.bottomLeft-item h3 , .right-item h3 {
+    color: #19212e;
+}
+
+#testimony{
+    color: white;
+    opacity: 70%;
+}
+
+#testimony-3, #testimony-5 {
+    color: #19212e;
+    opacity: 70%;
+}
+
+#graduate-last,
+#graduate-third {
+    color: #030303;
+    opacity: 50%;
+}
+
+.quotation img {
+    border: none;
+    border-radius: 0%;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 1;
+}
+
+
+@media (min-width: 576px) {
+   .grid-container,
+   .topLeft-section,
+   .bottomLeft-section,
+   .main-left {
+    display: flex;
+   }
+
+   .grid-container {
+    max-width: 900px;
+    margin: 0 auto;
+    
+   }
+
+  .right-item {
+    flex-basis: 25%;
+  }
+
+  .main-left {
+    flex-direction: column;
+    flex-basis: 75%;
+  }
+
+  #left-items {
+    margin-right: 15px;
+  }
+
+  .topLeft-section {
+    flex-basis: 50%;
+    
+  }
+
+  .bottomLeft-section {
+    flex-basis: 50%;
+    
+  }
+
+  .upperRight-item {
+    flex-basis: 35%;
+  }
+
+  .bottomLeft-item {
+    flex-basis: 35%;
+  }
+
+  .upperLeft-item {
+    flex-basis: 65%;
+  }
+
+  .bottomRight-item {
+    flex-basis: 65%;
+  }
+
+}
